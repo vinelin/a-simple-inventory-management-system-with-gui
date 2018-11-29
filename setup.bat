@@ -1,0 +1,1 @@
+pyinstaller --onefile -w -i 1.ico gui_version.py
