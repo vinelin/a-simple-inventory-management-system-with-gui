@@ -439,7 +439,7 @@ def open_time():
     path = './record.txt'
     with open (path, 'r+', encoding='UTF-8') as text:
         #把数据库文件删除后能重建
-        print(not os.path.isfile (db_file))
+        # print(not os.path.isfile (db_file))
         if not os.path.isfile (db_file):
             conn = sqlite3.connect (db_file)
             cursor = conn.cursor ()
@@ -449,7 +449,7 @@ def open_time():
         text.seek (0)
         count = text.read()
         num = int (count)
-        print(num)
+        # print(num)
         if num == 0:
             num += 1
             text.seek (0)
